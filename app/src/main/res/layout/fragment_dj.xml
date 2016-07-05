@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDJBackground"
+    android:orientation="vertical"
+    tools:context=".dj.DJFragment">
+
+    <include layout="@layout/load_data" />
+
+    <RelativeLayout
+        android:id="@+id/rl_content_dj"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/dj_name"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/label1"
+            android:gravity="end"
+            android:padding="16dp"
+            android:text="@string/emobits_score"
+            android:textColor="#FFF" />
+
+        <View
+            android:id="@+id/line_straight"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/label1"
+            android:background="#FFF" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label1"
+            android:divider="@color/colorDJDivider"
+            android:dividerHeight="1px" />
+
+        <View
+            android:id="@+id/dj_line_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/listView"
+            android:layout_gravity="bottom"
+            android:background="#FFF" />
+    </RelativeLayout>
+</FrameLayout>

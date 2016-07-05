@@ -1,0 +1,5 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <item name="radius_background" format="float" type="dimen">130</item>
+    <dimen name="width_circle_main">200px</dimen>
+</resources>

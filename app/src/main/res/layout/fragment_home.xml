@@ -1,0 +1,136 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainGradient1"
+    tools:context=".home.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_main_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circular_big" />
+
+        <TextView
+            android:id="@+id/tv_home_emotion1"
+            android:layout_width="@dimen/size_circular_emotions"
+            android:layout_height="@dimen/size_circular_emotions"
+            android:layout_above="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/emtion_selector"
+            android:gravity="center"
+            android:text="So\nBlue"
+            android:textColor="@color/emtion_text_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_home_emotion3"
+            android:layout_width="@dimen/size_circular_emotions"
+            android:layout_height="@dimen/size_circular_emotions"
+            android:layout_alignLeft="@+id/tv_home_emotion2"
+            android:layout_alignStart="@+id/tv_home_emotion2"
+            android:layout_alignTop="@+id/tv_home_emotion6"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:background="@drawable/emtion_selector"
+            android:gravity="center"
+            android:text="Focus"
+            android:textColor="@color/emtion_text_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_home_emotion4"
+            android:layout_width="@dimen/size_circular_emotions"
+            android:layout_height="@dimen/size_circular_emotions"
+            android:layout_alignEnd="@+id/view"
+            android:layout_alignRight="@+id/view"
+            android:layout_below="@+id/imageView"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/emtion_selector"
+            android:gravity="center"
+            android:text="Sad"
+            android:textColor="@color/emtion_text_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_home_emotion5"
+            android:layout_width="@dimen/size_circular_emotions"
+            android:layout_height="@dimen/size_circular_emotions"
+            android:layout_alignLeft="@+id/view"
+            android:layout_alignStart="@+id/view"
+            android:layout_alignTop="@+id/tv_home_emotion4"
+            android:layout_marginLeft="37dp"
+            android:layout_marginStart="37dp"
+            android:background="@drawable/emtion_selector"
+            android:gravity="center"
+            android:text="Break\nUp"
+            android:textColor="@color/emtion_text_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_home_emotion6"
+            android:layout_width="@dimen/size_circular_emotions"
+            android:layout_height="@dimen/size_circular_emotions"
+            android:layout_above="@+id/tv_home_emotion5"
+            android:layout_alignEnd="@+id/tv_home_emotion7"
+            android:layout_alignRight="@+id/tv_home_emotion7"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/emtion_selector"
+            android:gravity="center"
+            android:text="Funky"
+            android:textColor="@color/emtion_text_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_home_emotion2"
+            android:layout_width="@dimen/size_circular_emotions"
+            android:layout_height="@dimen/size_circular_emotions"
+            android:layout_alignTop="@+id/view"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:background="@drawable/emtion_selector"
+            android:gravity="center"
+            android:text="Happy"
+            android:textColor="@color/emtion_text_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_home_emotion7"
+            android:layout_width="@dimen/size_circular_emotions"
+            android:layout_height="@dimen/size_circular_emotions"
+            android:layout_alignTop="@+id/tv_home_emotion2"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/imageView"
+            android:layout_toStartOf="@+id/imageView"
+            android:background="@drawable/emtion_selector"
+            android:gravity="center"
+            android:text="Fly\nHigh"
+            android:textColor="@color/emtion_text_color"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_main_logo" />
+
+    </RelativeLayout>
+</FrameLayout>

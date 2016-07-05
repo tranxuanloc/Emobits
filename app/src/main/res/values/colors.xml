@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000f1f</color>
+    <color name="colorPrimaryDark">#000a14</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="colorLightGray">#EEE</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorControlNormal">#00FFFFFF</color>
+    <color name="colorControlActivated">#3c000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorButtonNormal">#004e63</color>
+    <color name="colorTabLayoutBackground">#172029</color>
+    <color name="colorTabTextNormal">#7F7C7D</color>
+    <color name="colorTabTextSelected">#FFFFFF</color>
+    <color name="colorGradient1">#01F7FF</color>
+    <color name="colorGradient2">#026EF8</color>
+    <color name="colorGradient3">#FF00FA</color>
+    <color name="colorGradient1Press">#4D01F7FF</color>
+    <color name="colorGradient2Press">#4D026EF8</color>
+    <color name="colorGradient3Press">#4DFF00FA</color>
+    <color name="colorMainGradient1">#001224</color>
+    <color name="colorMainGradient2">#002740</color>
+    <color name="colorMainGradient3">#001831</color>
+    <color name="colorCircleMain">#002b44</color>
+    <color name="colorDJBackground">#010011</color>
+    <color name="colorSearchBackground">#07121d</color>
+    <color name="colorListenNowBackground">#001224</color>
+    <color name="colorDJDivider">#343341</color>
+    <color name="colorTextPressGray">#5E6061</color>
+    <color name="colorBackgroundPressGray">#5E6061</color>
+    <color name="colorProgressBackground">#000e1d</color>
+    <color name="colorProgress">#005480</color>
+    <color name="colorSecondProgress">#878787</color>
+    <color name="colorNotifyBackground">#424242</color>
+</resources>

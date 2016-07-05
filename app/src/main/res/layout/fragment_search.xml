@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSearchBackground"
+    tools:context=".search.SearchFragment">
+
+    <include layout="@layout/load_data" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_content_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBanner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/banner_search"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo1" />
+
+            <TextView
+                android:id="@+id/labelSlogan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/stroke_slogan"
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp"
+                android:text="@string/a_large_of_collage_of_dj"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/labelNewSession"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/ivBanner"
+                android:clickable="true"
+                android:drawablePadding="7dp"
+                android:drawableRight="@drawable/arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/new_session"
+                android:textColor="@color/white_gray_color"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewNewSession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelNewSession" />
+
+            <View
+                android:id="@+id/line_straight"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/recyclerViewNewSession"
+                android:background="#1AFFFFFF" />
+
+            <TextView
+                android:id="@+id/labelBestSession"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/line_straight"
+                android:clickable="true"
+                android:drawablePadding="7dp"
+                android:drawableRight="@drawable/arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/best_session"
+                android:textColor="@color/white_gray_color"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewBestSession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelBestSession" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>
